@@ -9,7 +9,7 @@ buttons.forEach((item)=>{
         display.innerText=''
    }
    else if(item.id=='backspace'){
-        let string = display.innerText.tostring()
+        let string = display.innerText.toString()
         display.innerText = string.substring(0,string.length-1)
    }
    else if(display.innerText!='' && item.id == 'equals'){
