@@ -5,11 +5,11 @@
 }
 
 
-body{
+body {
     background-color: rgb(99, 201, 252);
 }
 
-.container{
+.container {
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -17,63 +17,79 @@ body{
 }
 
 
-.calculator{
-    height:auto;
-    width:auto;
+.calculator {
+    height: auto;
+    width: auto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow:0 0 30px rgba(0, 0, 0, 0.4); 
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
-#display{
-    height:150px;
-    width:auto;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+#display {
+    height: 150px;
+    width: 300px;
     font-size: 30px;
     margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    background-color: white;
 
-    
+    /*Flex setup */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align to bottom initially */
+
+    /*Wrapping and scroll */
+    overflow-y: auto;
+    word-break: break-word;
+    white-space: pre-wrap;
+    text-align: right;
+    transition: justify-content 0.2s ease;
 }
 
-button{
+
+
+button {
     height: 60px;
     width: 60px;
-    border:0;
-    margin:5px;
-    font-size:20px; 
+    border: 0;
+    margin: 5px;
+    font-size: 20px;
     cursor: pointer;
-
+   transition: background-color 0.1s ease;
 
 }
 
-button#equals{
+
+button:active {
+    background-color:#999;
+    color:black;
+}
+
+button#equals {
     height: 130px;
     background-color: darkgray;
     color: white;
 }
 
 
-.calculator button#clear{
+.calculator button#clear {
     background-color: red;
-    color:white;
+    color: white;
 }
 
 
-.calculator button.btn-operator{
-       background-color: #333;
-       color:white;
+.calculator button.btn-operator {
+    background-color: #333;
+    color: white;
 
 
 
 }
 
-.calculator button.btn-number{
-    background-color:  #333;
-    color:white;
+.calculator button.btn-number {
+    background-color: #333;
+    color: white;
 
 }
-
-
