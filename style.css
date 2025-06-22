@@ -6,7 +6,7 @@
 
 
 body{
-    background-color: rgb(80, 197, 255);
+    background-color: rgb(99, 201, 252);
 }
 
 .container{
@@ -29,6 +29,12 @@ body{
 #display{
     height:150px;
     width:auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+
     
 }
 
